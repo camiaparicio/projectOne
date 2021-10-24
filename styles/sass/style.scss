@@ -5,13 +5,18 @@
 
 // STYLE.SCSS is just for general styling & common fonts/colours, etc
 
-$primary: hotpink;
-$deepBlue: #032f3e;
 
-$baseFont: 'Raleway', sans-serif;
-$secondaryFont: 'Lora', serif;
-
-.wrapper {
-    width: 90%;
+html {
+    font-family: 'Raleway', sans-serif;
+    color: #2e2e2e;
 }
 
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1280px;
+    width: 100%;
+	margin: 0 auto;
+}
