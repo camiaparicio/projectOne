@@ -1,0 +1,24 @@
+$primary: #2e2e2e;
+$grey: #999999;
+$greenPrimary:#64A604;
+$greenSecondary: #DDED9A;
+
+$baseFont: 'Raleway', sans-serif;
+$secondaryFont: 'Lora', serif;
+
+// STYLE.SCSS is just for general styling & common fonts/colours, etc
+
+html {
+    font-family: 'Raleway', sans-serif;
+    color: $primary;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1280px;
+    width: 100%;
+	margin: 0 auto;
+}
