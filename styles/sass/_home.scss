@@ -7,7 +7,7 @@
 
 // HEADER STYLING 
 
-header {
+.indexHeader {
     background-image: url(./../assets/home-1.jpeg);
     height: 100vh;
     background-position: center;
@@ -171,14 +171,15 @@ ul.nav {
         margin: 0;
         line-height: 24px;
         letter-spacing: 1.1px;
+        border-bottom: 2px solid green;
     }
     p {
         font-family: $secondaryFont;
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 0.6px;
         line-height: 36px;
         font-style: italic;
-
+        color: #595959;
     }
 }
 
@@ -190,11 +191,13 @@ ul.nav {
 // FOOTER SECTION
 
 .footerFlex {
-    display: flex;
     background: #333333;
-}
+    display: flex;
+    padding: 30px;
+} 
 
 .footerSection {
+    display: flex;
     h2{
         color: $greenPrimary;
     }
@@ -209,4 +212,77 @@ ul.nav {
         text-decoration: none;
         color: $grey;
     }
+    ul {
+        padding: 0;
+    }
+}
+
+.footerOne,
+.footerTwo,
+.footerThree {
+    width: calc(90% / 3);
+    padding: 10px;
+}
+.footerOne {
+    width: 30%;
+}
+
+.footerTwo li{
+    list-style: none;
+}
+
+
+.copyright {
+    text-align: center;
+}
+ 
+.footerThree #email {
+    background: #6f6f6f;
+    border: none;
+    font-family: $secondaryFont;
+    font-style: italic;
+    color: #999999;
+}
+
+.butt {
+   border: 1px outset $greenPrimary;
+   background-color: $greenPrimary;
+   height: 50px;
+   width: 50px;
+   cursor: pointer;
+   color: white;
+   i {
+       font-size: 30px;
+   }
+}
+
+.butt:hover {
+   color:white;
+}
+
+.input {
+text-align: center;
+}
+
+.footerOne p {
+    padding-bottom: 10px;
+    border-bottom:1px solid gray;
+}
+
+.footerOne p:last-child {
+    border-bottom: none;
+}
+
+.footerTwo li {
+    border-bottom:1px solid gray;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footerTwo li:last-child {
+    border-bottom: none;
+}
+
+.footerOne h2 {
+    font-size: 30px;
 }

@@ -1,1 +1,119 @@
 // _blog.scss is for all styling of just the blog page
+
+// HEADER STYLING 
+
+.blogHeader {
+    background-image: url(./../assets/blog-1.jpeg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+        margin-top: 0;
+        color: $primary;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: 46px;
+        line-height: 24px;
+        letter-spacing: 1.1px;
+    }
+    a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    ul li{
+        list-style: none;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+nav.topBar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	flex-basis: 500px;
+	flex-grow: 1;
+}
+
+ul.nav {
+	display: flex;
+	flex-basis: 500px;
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+// PINEAPPLE CHICKEN SECTION
+
+.pineappleSection p:last-child {
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 25px;
+}
+
+// SALLY LUCAS 
+
+.sallySection {
+    display: flex;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 30px;
+}
+
+.sallyText {
+    background-color: #F2F2F2;
+    padding-right: 30px;
+}
+
+.sallyImg {
+    width: 15%;
+}
+.sallyText {
+    width: 85%;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+// related post section
+
+.relatedSection {
+    display: flex;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 20px;
+}
+
+.relatedCake,
+.relatedFloral,
+.relatedSingle {
+    width: calc(100% / 3);
+}
+
+// coments section
+
+.commentsFlex {
+    display: flex;
+}
+
+.lucatonyBubble,
+.brianBubble {
+    background-color: #F2F2F2;
+}
+
+.lucatonyBubble{
+    width: 80%;
+    display: inline-block;
+    margin-left: 25px;
+    padding-left: 25px;
+}
+
+.brianBubble {
+    width: 80%;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding-left: 25px;
+}
