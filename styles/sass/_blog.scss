@@ -164,3 +164,56 @@ button[type=submit]:focus {
     background: #4a7a03;
 }
 }
+
+// media queries
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .pineappleSection {
+        padding: 40px;
+    }
+    .relatedSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .relatedSection h3{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .blogRelated{
+        text-align: center;
+    }
+    .blogForm > button:nth-child(9) {
+    width: 30%;
+    }
+    .brianSection img{
+        display: none;
+    }
+    .lucatonySection img{
+        display:none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .blogHeader ul li{
+    display: none;
+    }
+    .sallySection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F2F2F2;
+    }
+    .sallyText{
+        padding: 0;
+    }
+    .pineappleSection {
+        padding-bottom: 0;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

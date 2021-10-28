@@ -52,12 +52,12 @@ ul.nav {
 .contactForm {
     input[type=name], 
     input[type=email]{
-      height: 48px;
-      width: 45%;
-      margin: 10px 0 8px;
-      border: 0;
-      background: #F2F2F2;
-      margin-right: 20px;
+    height: 48px;
+    width: 45%;
+    margin: 10px 0 8px;
+    border: 0;
+    background: #F2F2F2;
+    margin-right: 20px;
     padding: 10px;
     font-family: $secondaryFont;
     }
@@ -89,6 +89,7 @@ ul.nav {
         padding: 10px;
         background-color: white;
         width: 25%;
+        border: 2px solid #F2F2F2;
     }
     
     button[type=submit]:hover,
@@ -131,4 +132,49 @@ padding-bottom: 17px;
     width: 40%;
     height: 60%;
     padding: 30px;
+}
+
+// media queries
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .contactHeader ul li{
+    display: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .contactForm h2 {
+        text-transform: uppercase;
+    }
+    .side{
+        width: 100%;
+    }
+    .side h2, h3, p {
+        text-align: center;
+    }
+    .flexContainer{
+       flex-wrap: wrap;
+       align-items: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    button[type=submit]{
+        align-items: center;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .contactForm input[type=message] {
+        height: 100px;
+    }
+.contactForm > button:nth-child(10) {
+    width: 93%;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 15px;
+}
+
 }

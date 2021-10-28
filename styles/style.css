@@ -434,6 +434,7 @@ ul.nav {
   line-height: 24px;
   letter-spacing: 1.1px;
   border-bottom: 2px solid green;
+  padding-bottom: 15px;
 }
 .hungrySection p {
   font-family: "Lora", serif;
@@ -447,6 +448,24 @@ ul.nav {
 .hungry {
   background-color: #dded9b;
   padding-top: 90px;
+}
+
+.hungryArrows {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hungryArrows p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.hungryArrows i {
+  margin: 5px;
 }
 
 .footerFlex {
@@ -550,6 +569,86 @@ ul.nav {
   font-size: 30px;
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .indexHeader ul li {
+    display: none;
+  }
+
+  .tacoSection {
+    background: #F2F2F2;
+  }
+
+  .popularSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .popularText {
+    margin: 5px;
+  }
+
+  .tacoSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .iconsSection {
+    text-align: center;
+  }
+
+  .restaurantSection {
+    padding-top: 30px;
+  }
+
+  .footerOne {
+    display: none;
+  }
+
+  .footerTwo {
+    display: none;
+  }
+
+  .hungryArrows {
+    display: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .flexParent {
+    padding-bottom: 60px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .flexParent {
+    padding-bottom: 200px;
+  }
+
+  .iconsSection {
+    padding: 0;
+  }
+
+  .hungrySection > p:nth-child(3) {
+    font-size: 18px;
+  }
+}
 .blogHeader {
   background-image: url(./../assets/blog-1.jpeg);
   height: 70vh;
@@ -720,6 +819,75 @@ ul.nav {
   background: #4a7a03;
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .pineappleSection {
+    padding: 40px;
+  }
+
+  .relatedSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .relatedSection h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .blogRelated {
+    text-align: center;
+  }
+
+  .blogForm > button:nth-child(9) {
+    width: 30%;
+  }
+
+  .brianSection img {
+    display: none;
+  }
+
+  .lucatonySection img {
+    display: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .blogHeader ul li {
+    display: none;
+  }
+
+  .sallySection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+  }
+
+  .sallyText {
+    padding: 0;
+  }
+
+  .pineappleSection {
+    padding-bottom: 0;
+  }
+}
+/* Landscape phones and down */
 .contactHeader {
   background-image: url(./../assets/contact-1.jpeg);
   height: 70vh;
@@ -818,6 +986,7 @@ ul.nav {
   padding: 10px;
   background-color: white;
   width: 25%;
+  border: 2px solid #F2F2F2;
 }
 .contactForm button[type=submit]:hover,
 .contactForm button[type=submit]:focus {
@@ -860,4 +1029,55 @@ ul.nav {
   width: 40%;
   height: 60%;
   padding: 30px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .contactHeader ul li {
+    display: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contactForm h2 {
+    text-transform: uppercase;
+  }
+
+  .side {
+    width: 100%;
+  }
+
+  .side h2, h3, p {
+    text-align: center;
+  }
+
+  .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  button[type=submit] {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contactForm input[type=message] {
+    height: 100px;
+  }
+
+  .contactForm > button:nth-child(10) {
+    width: 93%;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 15px;
+  }
 }
