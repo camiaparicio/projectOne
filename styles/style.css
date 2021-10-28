@@ -363,9 +363,9 @@ ul.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px;
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .iconsSection h3 {
   text-transform: uppercase;
@@ -375,7 +375,7 @@ ul.nav {
   color: #999999;
 }
 .iconsSection i {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .iconsImg {
@@ -387,6 +387,7 @@ ul.nav {
   width: 50%;
   margin: auto;
   padding: 15px;
+  padding-top: 100px;
 }
 .restaurantSection h2 {
   text-transform: uppercase;
@@ -396,11 +397,14 @@ ul.nav {
 .restaurantSection p {
   padding: 10px;
 }
-.restaurantSection .cafeteriaImg {
-  display: relative;
+
+.cafeteriaImg {
+  position: relative;
+  display: inline-block;
 }
-.restaurantSection .floatingLogo {
-  display: absolute;
+
+.floatingLogo {
+  position: absolute;
 }
 
 .gallerySection {
@@ -608,6 +612,10 @@ ul.nav {
           align-items: center;
 }
 
+.pineappleSection {
+  padding-top: 90px;
+}
+
 .pineappleSection p:last-child {
   border-bottom: 3px solid #F2F2F2;
   padding-bottom: 25px;
@@ -662,18 +670,54 @@ ul.nav {
 }
 
 .lucatonyBubble {
-  width: 80%;
+  width: 90%;
   display: inline-block;
   margin-left: 25px;
   padding-left: 25px;
 }
 
 .brianBubble {
-  width: 80%;
+  width: 90%;
   display: inline-block;
   margin-left: 25px;
   margin-top: 25px;
   padding-left: 25px;
+}
+
+.blogForm {
+  margin-bottom: 40px;
+}
+
+.blogForm input[type=name],
+.blogForm input[type=email],
+.blogForm input[type=subject] {
+  height: 48px;
+  width: calc(100% / 3 - 5px);
+  border: 3px solid #F2F2F2;
+  background: white;
+  font-family: "Lora", serif;
+}
+.blogForm input[type=message] {
+  height: 200px;
+  width: 100%;
+  border: 3px solid #F2F2F2;
+  background: white;
+  font-family: "Lora", serif;
+  margin-top: 15px;
+}
+.blogForm button[type=submit] {
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: #64A604;
+  width: 15%;
+  margin-top: 15px;
+}
+.blogForm button[type=submit]:hover,
+.blogForm button[type=submit]:focus {
+  border: 3px solid #4a7a03;
+  background: #4a7a03;
 }
 
 .contactHeader {
@@ -738,38 +782,45 @@ ul.nav {
           align-items: center;
 }
 
-input[type=name],
-input[type=email],
-input[type=subject] {
+.contactForm input[type=name],
+.contactForm input[type=email] {
   height: 48px;
-  padding: 0 13px;
-  width: 60%;
+  width: 45%;
+  margin: 10px 0 8px;
+  border: 0;
+  background: #F2F2F2;
+  margin-right: 20px;
+  padding: 10px;
+  font-family: "Lora", serif;
+}
+.contactForm input[type=subject] {
+  height: 48px;
+  width: 93%;
   margin: 10px 0;
   border: 0;
   background: #F2F2F2;
+  padding: 10px;
+  font-family: "Lora", serif;
 }
-
-input[type=message] {
-  height: 120px;
-  padding: 0 13px;
-  width: 60%;
+.contactForm input[type=message] {
+  height: 200px;
+  width: 93%;
   margin: 10px 0;
   border: 0;
   background: #F2F2F2;
+  padding: 10px;
+  font-family: "Lora", serif;
 }
-
-button[type=submit] {
+.contactForm button[type=submit] {
   border: none;
   color: #64A604;
   text-transform: uppercase;
-  min-width: 320px;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: white;
-  width: 60%;
+  width: 25%;
 }
-
-button[type=submit]:hover,
-button[type=submit]:focus {
+.contactForm button[type=submit]:hover,
+.contactForm button[type=submit]:focus {
   background: #F2F2F2;
 }
 
@@ -777,17 +828,17 @@ button[type=submit]:focus {
   background: #F2F2F2;
 }
 
-h2 {
+.side h2 {
   text-transform: uppercase;
   padding-bottom: 17px;
 }
 
-h3 {
+.side h3 {
   padding-bottom: 4px;
   text-transform: uppercase;
 }
 
-p {
+.side p {
   color: #999999;
   font-family: "Lora", serif;
   line-height: 24px;
@@ -806,11 +857,7 @@ p {
 }
 
 .side {
-  width: 30%;
-  height: 600px;
-  padding: 50px;
-}
-
-.name {
-  width: 100px;
+  width: 40%;
+  height: 60%;
+  padding: 30px;
 }

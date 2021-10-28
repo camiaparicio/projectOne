@@ -49,55 +49,69 @@ ul.nav {
 
 // FORM SECTION
 
-input[type=name], 
-input[type=email], 
-input[type=subject] {
-  height: 48px;
-  padding: 0 13px;
-  width: 60%;
-  margin: 10px 0;
-  border:0;
-  background: #F2F2F2;
+.contactForm {
+    input[type=name], 
+    input[type=email]{
+      height: 48px;
+      width: 45%;
+      margin: 10px 0 8px;
+      border: 0;
+      background: #F2F2F2;
+      margin-right: 20px;
+    padding: 10px;
+    font-family: $secondaryFont;
+    }
+
+    input[type=subject] {
+      height: 48px;
+      width: 93%;
+      margin: 10px 0;
+      border: 0;
+      background: #F2F2F2;
+      padding: 10px;
+    font-family: $secondaryFont;
+    }
+
+    input[type=message] {
+        height: 200px;
+        width: 93%;
+        margin: 10px 0;
+        border: 0;
+        background: #F2F2F2;
+        padding: 10px;
+        font-family: $secondaryFont;
+    }
+    
+    button[type=submit]{
+        border: none;
+        color: #64A604;
+        text-transform: uppercase;
+        padding: 10px;
+        background-color: white;
+        width: 25%;
+    }
+    
+    button[type=submit]:hover,
+    button[type=submit]:focus {
+        background: #F2F2F2;
+    }
 }
 
-input[type=message] {
-    height: 120px;
-    padding: 0 13px;
-    width: 60%;
-    margin: 10px 0;
-    border:0;
-    background: #F2F2F2;
-}
-
-button[type=submit]{
-    border:none;
-    color: #64A604;
-    text-transform: uppercase;
-    min-width: 320px;
-    padding:10px 20px;
-    background-color: white;
-    width: 60%;
-}
-
-button[type=submit]:hover,
-button[type=submit]:focus {
-    background: #F2F2F2;
-}
 
 // SIDE SECTION 
 
 .side {
     background: #F2F2F2;
 }
-h2{
+.side h2{
 text-transform: uppercase;
 padding-bottom: 17px;
 }
-h3{
+.side h3{
     padding-bottom: 4px;
     text-transform: uppercase;
 }
-p{
+.side p{
     color: #999999;
     font-family: $secondaryFont;
     line-height: 24px;
@@ -114,11 +128,7 @@ p{
 }
 
 .side {
-    width: 30%;
-    height: 600px;
-    padding: 50px;
-}
-
-.name {
-    width: 100px;
+    width: 40%;
+    height: 60%;
+    padding: 30px;
 }

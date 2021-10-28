@@ -102,9 +102,9 @@ ul.nav {
     width: 50%;
     background-color: #F2F2F2;
     display: flex;
-    padding-top: 70px;
-        padding-right: 70px;
-            padding-left: 70px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     h3{
         text-transform: uppercase;
     }
@@ -113,7 +113,7 @@ ul.nav {
         color: #999999;
     }
     i {
-        font-size: 40px;
+        font-size: 25px;
     }
 }
 
@@ -127,6 +127,7 @@ ul.nav {
     width: 50%;
     margin: auto;
     padding: 15px;
+    padding-top: 100px;
     h2 {
         text-transform: uppercase;
         letter-spacing: 1.1px;
@@ -135,13 +136,14 @@ ul.nav {
     p {
         padding: 10px;
     }
-    .cafeteriaImg {
-        display: relative;
-    }
+}
+.cafeteriaImg {
+    position: relative;
+    display: inline-block;
+}
 
-    .floatingLogo{
-        display: absolute;
-    }
+.floatingLogo{
+    position: absolute;
 }
 
 // GALLERY IMGS SECTION
