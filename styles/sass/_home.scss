@@ -122,6 +122,10 @@ ul.nav {
 }
 
 // OUR RESTAURANT SECION
+
+.restaurantImgs{
+    position: relative;
+}
 .restaurantSection {
     text-align: center;
     width: 50%;
@@ -138,12 +142,13 @@ ul.nav {
     }
 }
 .cafeteriaImg {
-    position: relative;
     display: inline-block;
 }
 
 .floatingLogo{
     position: absolute;
+    top: -90px;
+    right: 0;
 }
 
 // GALLERY IMGS SECTION
@@ -347,6 +352,9 @@ text-align: center;
 @media (max-width: 768px) {
     .flexParent{
         padding-bottom: 60px;
+    }
+    .floatingLogo{
+        display: none;
     }
 }
 

@@ -51,6 +51,11 @@ ul.nav {
 
 // PINEAPPLE CHICKEN SECTION
 
+.pineappleSection h2{
+   font-size: 46px;
+   margin-bottom: 0;
+}
+
 .pineappleSection {
     padding-top: 90px;
 }
@@ -58,6 +63,19 @@ ul.nav {
 .pineappleSection p:last-child {
     border-bottom: 3px solid #F2F2F2;
     padding-bottom: 25px;
+}
+
+.pineappleSection > p:nth-child(2) {
+ color: $grey;
+ margin-bottom: 40px;
+ margin-top: 5px;
+}
+
+.pineappleTxt {
+    font-family: $secondaryFont;
+    color: $grey;
+    line-height: 30px;
+    letter-spacing: 0.5px;
 }
 
 // SALLY LUCAS 
@@ -69,17 +87,24 @@ ul.nav {
 }
 
 .sallyText {
+    width: 85%;
+    padding-left: 30px;
+    padding-top: 20px;
     background-color: #F2F2F2;
     padding-right: 30px;
+    font-family: $secondaryFont;
+    color: $grey;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    h2 {
+       text-transform: uppercase;
+       font-family: $baseFont;
+       color: $primary;
+    }
 }
 
 .sallyImg {
     width: 15%;
-}
-.sallyText {
-    width: 85%;
-    padding-left: 30px;
-    padding-top: 20px;
 }
 
 // related post section
@@ -88,6 +113,14 @@ ul.nav {
     display: flex;
     border-bottom: 3px solid #F2F2F2;
     padding-bottom: 20px;
+    h3 {
+        text-transform: uppercase;
+    }
+    p{
+        font-family: $secondaryFont;
+        color: $grey;
+        letter-spacing: 0.5px;
+    }
 }
 
 .relatedCake,
@@ -96,7 +129,15 @@ ul.nav {
     width: calc(100% / 3);
 }
 
+.blogRelated{
+    text-transform: uppercase;
+}
+
 // coments section
+
+.commentsTitle {
+    text-transform: uppercase;
+}
 
 .commentsFlex {
     display: flex;
@@ -123,6 +164,20 @@ ul.nav {
 }
 
 // comment form section
+
+.commentBlog {
+    h2 {
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+    p {
+        font-style: italic;
+        font-family: $secondaryFont;
+        color: $grey;
+        letter-spacing: 0.5px;
+        padding-bottom: 15px;
+    }
+}
 
 .blogForm {
     margin-bottom: 40px;

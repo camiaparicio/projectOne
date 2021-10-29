@@ -50,6 +50,14 @@ ul.nav {
 // FORM SECTION
 
 .contactForm {
+    h2 {
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+}
+
+.contactForm {
     input[type=name], 
     input[type=email]{
     height: 48px;
@@ -101,6 +109,14 @@ ul.nav {
 
 // SIDE SECTION 
 
+.side > div:nth-child(1) > p:nth-child(8) {
+ margin-top: 0px;
+}
+
+.side > div:nth-child(1) > p:nth-child(7) {
+ margin-bottom: 0px;
+}
+
 .side {
     background: #F2F2F2;
 }
@@ -108,6 +124,7 @@ ul.nav {
 text-transform: uppercase;
 padding-bottom: 17px;
 }
+
 .side h3{
     padding-bottom: 4px;
     text-transform: uppercase;
@@ -115,7 +132,7 @@ padding-bottom: 17px;
 .side p{
     color: #999999;
     font-family: $secondaryFont;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0.3px;
 }
 
@@ -145,9 +162,6 @@ padding-bottom: 17px;
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .contactForm h2 {
-        text-transform: uppercase;
-    }
     .side{
         width: 100%;
     }

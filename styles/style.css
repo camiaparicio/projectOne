@@ -382,6 +382,10 @@ ul.nav {
   width: 50%;
 }
 
+.restaurantImgs {
+  position: relative;
+}
+
 .restaurantSection {
   text-align: center;
   width: 50%;
@@ -399,12 +403,13 @@ ul.nav {
 }
 
 .cafeteriaImg {
-  position: relative;
   display: inline-block;
 }
 
 .floatingLogo {
   position: absolute;
+  top: -90px;
+  right: 0;
 }
 
 .gallerySection {
@@ -634,6 +639,10 @@ ul.nav {
   .flexParent {
     padding-bottom: 60px;
   }
+
+  .floatingLogo {
+    display: none;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -711,6 +720,11 @@ ul.nav {
           align-items: center;
 }
 
+.pineappleSection h2 {
+  font-size: 46px;
+  margin-bottom: 0;
+}
+
 .pineappleSection {
   padding-top: 90px;
 }
@@ -718,6 +732,19 @@ ul.nav {
 .pineappleSection p:last-child {
   border-bottom: 3px solid #F2F2F2;
   padding-bottom: 25px;
+}
+
+.pineappleSection > p:nth-child(2) {
+  color: #999999;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+
+.pineappleTxt {
+  font-family: "Lora", serif;
+  color: #999999;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
 .sallySection {
@@ -729,18 +756,24 @@ ul.nav {
 }
 
 .sallyText {
+  width: 85%;
+  padding-left: 30px;
+  padding-top: 20px;
   background-color: #F2F2F2;
   padding-right: 30px;
+  font-family: "Lora", serif;
+  color: #999999;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.sallyText h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #2e2e2e;
 }
 
 .sallyImg {
   width: 15%;
-}
-
-.sallyText {
-  width: 85%;
-  padding-left: 30px;
-  padding-top: 20px;
 }
 
 .relatedSection {
@@ -750,11 +783,27 @@ ul.nav {
   border-bottom: 3px solid #F2F2F2;
   padding-bottom: 20px;
 }
+.relatedSection h3 {
+  text-transform: uppercase;
+}
+.relatedSection p {
+  font-family: "Lora", serif;
+  color: #999999;
+  letter-spacing: 0.5px;
+}
 
 .relatedCake,
 .relatedFloral,
 .relatedSingle {
   width: calc(100% / 3);
+}
+
+.blogRelated {
+  text-transform: uppercase;
+}
+
+.commentsTitle {
+  text-transform: uppercase;
 }
 
 .commentsFlex {
@@ -781,6 +830,18 @@ ul.nav {
   margin-left: 25px;
   margin-top: 25px;
   padding-left: 25px;
+}
+
+.commentBlog h2 {
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.commentBlog p {
+  font-style: italic;
+  font-family: "Lora", serif;
+  color: #999999;
+  letter-spacing: 0.5px;
+  padding-bottom: 15px;
 }
 
 .blogForm {
@@ -950,6 +1011,12 @@ ul.nav {
           align-items: center;
 }
 
+.contactForm h2 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
 .contactForm input[type=name],
 .contactForm input[type=email] {
   height: 48px;
@@ -993,6 +1060,14 @@ ul.nav {
   background: #F2F2F2;
 }
 
+.side > div:nth-child(1) > p:nth-child(8) {
+  margin-top: 0px;
+}
+
+.side > div:nth-child(1) > p:nth-child(7) {
+  margin-bottom: 0px;
+}
+
 .side {
   background: #F2F2F2;
 }
@@ -1010,7 +1085,7 @@ ul.nav {
 .side p {
   color: #999999;
   font-family: "Lora", serif;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.3px;
 }
 
@@ -1039,10 +1114,6 @@ ul.nav {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .contactForm h2 {
-    text-transform: uppercase;
-  }
-
   .side {
     width: 100%;
   }
