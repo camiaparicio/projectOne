@@ -117,8 +117,13 @@ ul.nav {
     }
 }
 
+.iconsImg img{
+    height: 100%;
+}
+
 .iconsImg {
     width: 50%;
+    height: 100%;
 }
 
 // OUR RESTAURANT SECION
@@ -219,6 +224,8 @@ ul.nav {
 
 .footerSection {
     display: flex;
+    width: 75%;
+    margin: 0 auto;
     h2{
         color: $greenPrimary;
     }
@@ -236,6 +243,10 @@ ul.nav {
     ul {
         padding: 0;
     }
+}
+
+.footerSection h2, h3 {
+    text-transform: uppercase;
 }
 
 .footerOne,
@@ -279,10 +290,6 @@ ul.nav {
 
 .butt:hover {
    color:white;
-}
-
-.input {
-text-align: center;
 }
 
 .footerOne p {

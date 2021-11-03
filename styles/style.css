@@ -378,8 +378,13 @@ ul.nav {
   font-size: 25px;
 }
 
+.iconsImg img {
+  height: 100%;
+}
+
 .iconsImg {
   width: 50%;
+  height: 100%;
 }
 
 .restaurantImgs {
@@ -485,6 +490,8 @@ ul.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 75%;
+  margin: 0 auto;
 }
 .footerSection h2 {
   color: #64A604;
@@ -502,6 +509,10 @@ ul.nav {
 }
 .footerSection ul {
   padding: 0;
+}
+
+.footerSection h2, h3 {
+  text-transform: uppercase;
 }
 
 .footerOne,
@@ -545,10 +556,6 @@ ul.nav {
 
 .butt:hover {
   color: white;
-}
-
-.input {
-  text-align: center;
 }
 
 .footerOne p {
