@@ -35,6 +35,22 @@
     }
 }
 
+
+// **** THIS IS THE BURGER MENU ***
+.burger {
+    font-size: 20px;
+}
+
+.burger.show{
+    color: hotpink;
+    font-size: 40px;
+}
+
+#toggle{
+    display: none;
+}
+
+
 nav.topBar {
 	display: flex;
 	justify-content: space-between;
@@ -52,6 +68,7 @@ ul.nav {
 	justify-content: space-between;
 	align-items: center;
 }
+
 
 // POPULAR SECTION STYLING
 
@@ -319,12 +336,7 @@ ul.nav {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-    .indexHeader ul li{
-    display: none;
-    }
-    .tacoSection {
-        background: #F2F2F2;
-}
+
     .popularSection {
         display: flex;
         flex-direction: column;

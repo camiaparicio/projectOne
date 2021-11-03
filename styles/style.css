@@ -278,6 +278,19 @@ img {
   font-family: "Raleway", sans-serif;
 }
 
+.burger {
+  font-size: 20px;
+}
+
+.burger.show {
+  color: hotpink;
+  font-size: 40px;
+}
+
+#toggle {
+  display: none;
+}
+
 nav.topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,14 +596,6 @@ ul.nav {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .indexHeader ul li {
-    display: none;
-  }
-
-  .tacoSection {
-    background: #F2F2F2;
-  }
-
   .popularSection {
     display: -webkit-box;
     display: -ms-flexbox;
